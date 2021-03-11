@@ -1,15 +1,13 @@
 language: node_js
 
 node_js:
- - 15.10.0
+  - node
 
 cache: npm
 
-install:
- -npm install
 
 script: 
- -npm run test
+ -npm  test
  -npm run build
 
 deploy:
