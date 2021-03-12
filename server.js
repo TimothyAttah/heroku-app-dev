@@ -11,6 +11,10 @@ app.get( '/', ( req, res ) => {
 
 app.get( '/home', ( req, res ) => {
   res.send('This is home page')
+} )
+
+app.get( '/about', ( req, res ) => {
+  res.send('This is about page. Hope you like it.')
 })
 
 const PORT = process.env.PORT || 8080;
