@@ -15,6 +15,12 @@ app.get( '/home', ( req, res ) => {
 
 app.get( '/about', ( req, res ) => {
   res.send('This is about page. Hope you like it.')
+} )
+
+app.post( '/home', ( req, res ) => {
+  const show = req.body
+  console.log( show )
+  res.status(201).json({message: 'OK'})
 })
 
 const PORT = process.env.PORT || 8080;
