@@ -13,9 +13,6 @@ app.get( '/home', ( req, res ) => {
   res.send('This is home page')
 } )
 
-app.get( '/about', ( req, res ) => {
-  res.send('This is about page. Hope you like it.')
-} )
 
 app.post( '/home', ( req, res ) => {
   const show = req.body
