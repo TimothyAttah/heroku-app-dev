@@ -3,6 +3,7 @@ const cors = require( 'cors' );
 
 const app = express();
 
+app.use(express.urlencoded(), express.static({}))
 app.use( cors() );
 
 app.get( '/', ( req, res ) => {
